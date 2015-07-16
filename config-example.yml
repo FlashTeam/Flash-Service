@@ -1,0 +1,20 @@
+database:
+  driverClass: com.mysql.jdbc.Driver
+  user: user
+  password: password
+  url: jdbc:mysql://db.example.com
+  properties:
+    charSet: UTF-8
+  maxWaitForConnection: 1s
+  validationQuery: "SELECT * FROM POSTS LIMIT 1"
+  minSize: 8
+  maxSize: 32
+  checkConnectionWhileIdle: false
+  evictionInterval: 10s
+  minIdleTime: 1 minute
+imagePath: ./target/images
+minTimeout: 3000
+maxTimeout: 86400000
+s3Bucket: bucket
+awsSecretKey: supersecretkey
+awsAccessKey: notsosupersecretkey
